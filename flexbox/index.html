@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="reset.css">
+  <title>Document</title>
+</head>
+<style>
+/* reset */
+html, body, h1, h2, h3, h4, h5, header, footer, nav, article, section, figure, figcaption, ul, dl, dt, dd, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+header, footer, nav, article, section, aside, figure, figcaption {
+  display: block;
+}
+
+body {
+  font-family: Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'モリサワ 新ゴ R', 'Droid Sans', メイリオ, 'sans-serif';
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+body {
+  padding: 10px;
+  font-size: 14px;
+}
+/* /reset */
+
+.test {
+  padding-bottom: 20px;
+  margin: 10px 0;
+  border-bottom: 2px solid black;
+}
+table {
+  margin: 5px;
+}
+td,th {
+  padding: 5px;
+  border: 1px solid black;
+}
+td:first-child {
+  background-color: #eee;
+}
+td:last-child {
+  background-color: #ccc;
+}
+strong {
+  color: red;
+}
+.flexbox {
+  align-items: center;
+  -webkit-align-items: center;/*--- iOS8以前Safari用 ---*/
+  -webkit-box-align: center;/*--- Android4.3以前ブラウザ用 —*/
+  justify-content: center;
+  -webkit-justify-content: center;/*--- iOS8以前Safari用 ---*/
+  -webkit-box-pack: center;/*--- Android4.3以前ブラウザ用 —*/
+  background-color: #eee;
+}
+.flexbox .flex-item {
+  -webkit-flex: 1;
+  flex: 1;
+  background-color: #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+#test-1 .flexbox{
+  display: -webkit-box;/*--- Android4.3以前ブラウザ用 ---*/
+  display: flex;
+}
+#test-2 .flexbox{
+  display: -webkit-flex;/*--- iOS8以前Safari用 ---*/
+  display: -webkit-box;/*--- Android4.3以前ブラウザ用 ---*/
+  display: flex;
+}
+#test-3 .flexbox{
+  display: -webkit-box;/*--- Android4.3以前ブラウザ用 ---*/
+  display: -webkit-flex;/*--- iOS8以前Safari用 ---*/
+  display: flex;
+}
+#test-4 .flexbox{
+  display: -webkit-box;/*--- Android4.3以前ブラウザ用 ---*/
+  display: -webkit-flex;/*--- iOS8以前Safari用 ---*/
+  display: flex;
+}
+#test-4 .flexbox .flex-item {
+  -webkit-box-flex: 1;/*--- Android4.3以前ブラウザ用 ---*/
+  -webkit-flex: 1;/*--- iOS8以前Safari用 ---*/
+  flex: 1;
+  background-color: #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+</style>
+<body>
+
+<section id="test-1" class="test">
+  <h1>パターン１</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>親要素（flexboxコンテナ）</th>
+        <th>子要素（flexboxアイテム）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>display: -webkit-box;<br>display: flex;</td>
+        <td>-webkit-flex: 1;<br>flex: 1;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <h1>文字数：少</h1>
+    <ul class="flexbox">
+      <li class="flex-item">001</li>
+      <li class="flex-item">002</li>
+      <li class="flex-item">003</li>
+    </ul>
+  </section>
+
+  <section>
+    <h1>文字数：多</h1>
+    <ul class="flexbox">
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+    </ul>
+  </section>
+</section>
+
+<section id="test-2" class="test">
+  <h1>パターン２</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>親要素（flexboxコンテナ）</th>
+        <th>子要素（flexboxアイテム）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>display: -webkit-flex;</strong><br>display: -webkit-box;<br>display: flex;</td>
+        <td>-webkit-flex: 1;<br>flex: 1;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <h1>文字数：少</h1>
+    <ul class="flexbox">
+      <li class="flex-item">001</li>
+      <li class="flex-item">002</li>
+      <li class="flex-item">003</li>
+    </ul>
+  </section>
+
+  <section>
+    <h1>文字数：多</h1>
+    <ul class="flexbox">
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+    </ul>
+  </section>
+</section>
+
+<section id="test-3" class="test">
+  <h1>パターン３</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>親要素（flexboxコンテナ）</th>
+        <th>子要素（flexboxアイテム）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>display: -webkit-box;<br><strong>display: -webkit-flex;</strong><br>display: flex;</td>
+        <td>-webkit-flex: 1;<br>flex: 1;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <h1>文字数：少</h1>
+    <ul class="flexbox">
+      <li class="flex-item">001</li>
+      <li class="flex-item">002</li>
+      <li class="flex-item">003</li>
+    </ul>
+  </section>
+
+  <section>
+    <h1>文字数：多</h1>
+    <ul class="flexbox">
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+    </ul>
+  </section>
+</section>
+
+<section id="test-4" class="test">
+  <h1>パターン４</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>親要素（flexboxコンテナ）</th>
+        <th>子要素（flexboxアイテム）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>display: -webkit-box;<br>display: -webkit-flex;<br>display: flex;</td>
+        <td><strong>-webkit-box-flex: 1;</strong><br>-webkit-flex: 1;<br>flex: 1;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <h1>文字数：少</h1>
+    <ul class="flexbox">
+      <li class="flex-item">001</li>
+      <li class="flex-item">002</li>
+      <li class="flex-item">003</li>
+    </ul>
+  </section>
+
+  <section>
+    <h1>文字数：多</h1>
+    <ul class="flexbox">
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+      <li class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil id est culpa, aperiam et odit cum ducimus libero dolor iste reprehenderit suscipit autem aspernatur! Fuga alias, eveniet accusamus consectetur.</li>
+    </ul>
+  </section>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$green-2x-name: 'green_2x';
+$green-2x-x: 0px;
+$green-2x-y: 0px;
+$green-2x-offset-x: 0px;
+$green-2x-offset-y: 0px;
+$green-2x-width: 100px;
+$green-2x-height: 100px;
+$green-2x-total-width: 340px;
+$green-2x-total-height: 100px;
+$green-2x-image: '../images/sprite_2x.png';
+$green-2x: (0px, 0px, 0px, 0px, 100px, 100px, 340px, 100px, '../images/sprite_2x.png', 'green_2x', );
+$red-2x-name: 'red_2x';
+$red-2x-x: 120px;
+$red-2x-y: 0px;
+$red-2x-offset-x: -120px;
+$red-2x-offset-y: 0px;
+$red-2x-width: 100px;
+$red-2x-height: 100px;
+$red-2x-total-width: 340px;
+$red-2x-total-height: 100px;
+$red-2x-image: '../images/sprite_2x.png';
+$red-2x: (120px, 0px, -120px, 0px, 100px, 100px, 340px, 100px, '../images/sprite_2x.png', 'red_2x', );
+$yellow-2x-name: 'yellow_2x';
+$yellow-2x-x: 240px;
+$yellow-2x-y: 0px;
+$yellow-2x-offset-x: -240px;
+$yellow-2x-offset-y: 0px;
+$yellow-2x-width: 100px;
+$yellow-2x-height: 100px;
+$yellow-2x-total-width: 340px;
+$yellow-2x-total-height: 100px;
+$yellow-2x-image: '../images/sprite_2x.png';
+$yellow-2x: (240px, 0px, -240px, 0px, 100px, 100px, 340px, 100px, '../images/sprite_2x.png', 'yellow_2x', );
+$sprite-2x-width: 340px;
+$sprite-2x-height: 100px;
+$sprite-2x-image: '../images/sprite_2x.png';
+$sprite-2x-sprites: ($green-2x, $red-2x, $yellow-2x, );
+$sprite-2x: (340px, 100px, '../images/sprite_2x.png', $sprite-2x-sprites, );
+
+

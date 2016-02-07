@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+@import 'reset','sprite','sprite_2x';
+
+@mixin sprite_color($color){
+	width: nth($color,5);
+	height: nth($color,6);
+	background-image: url($sprite-image);
+	background-position: nth($color,3) nth($color,4);
+	@media screen and (-webkit-min-device-pixel-ratio:2.0){
+		background-image: url($sprite-2x-image);
+		background-size: $sprite-2x-width/2 $sprite-2x-height/2;
+	}
+}
+
+ul {
+	li {
+		margin: 10px;
+		border: 1px solid #000;
+		background-repeat: no-repeat;
+		&:nth-child(1) {
+			@include sprite_color($red);
+		}
+		&:nth-child(2) {
+			@include sprite_color($yellow);
+		}
+		&:nth-child(3) {
+			@include sprite_color($green);
+		}
+		p {
+			padding: 4px;
+			font-size: 14px;
+		}
+	}
+}
