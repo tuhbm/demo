@@ -1,0 +1,44 @@
+body {
+	font-size: 14px;
+	line-height: 1.4;
+}
+.wr {
+	max-width: 950px;
+	margin: 0 auto;
+}
+/* #vol */
+#vol {
+	.contents {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
+		.txt {
+			-webkit-flex: 1;
+			flex: 1;
+		}
+	}
+	&.episode3 {
+		.thumb {
+			padding: 10px 0 0 5%;
+			li {
+				width: 22%;
+			}
+		}
+		.modalWr {
+			.modal,
+			.ctrl {
+				width: 70%;
+				.delete {
+					a {
+						font-size: 20px;
+					}
+				}
+				.indicator {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}
+/* /#vol */

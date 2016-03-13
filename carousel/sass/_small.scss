@@ -1,0 +1,33 @@
+body {
+	font-size: 15px;
+	line-height: 1.4;
+}
+/* #vol */
+#vol {
+	.contents{
+		position: relative;
+	}
+	&.episode3 {
+		.thumb {
+			padding: 10px 0 0 7%;
+			li {
+				width: 29%;
+			}
+		}
+		.modalWr {
+			.modal,
+			.ctrl {
+				width: 95%;
+				.delete {
+					a {
+						font-size: 15px;
+					}
+				}
+				.indicator {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+/* /#vol */

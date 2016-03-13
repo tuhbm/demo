@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>カルーセル with jQuery</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/photo.js"></script>
+</head>
+<body id="vol"  class="episode3">
+<div class="wr">
+
+<div class="contents">
+
+<article class="txt">
+	<div class="volTitleWr">
+		<h1 class="volTitle">カルーセル with jQuery</span></h1>
+	</div>
+	<div class="thumb">
+		<ul class="cf">
+			<li><a href="#"><img src="photo/photo1.jpg" alt="研究船「なつしま」の前側。かっこいい。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo2.jpg" alt="後ろ側。黄色いのが無人潜水艇です。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo3.jpg" alt="船内から無人潜水艇に迫ってみました。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo4.jpg" alt="これを作った人の才能がうかがえる。すばらしい。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo5.jpg" alt="ロボットアーム。握力めっちゃ強そう。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo6.jpg" alt="その横には放射性物質を使う特別室があります。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo7.jpg" alt="船内の通路はけっこう狭い。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo8.jpg" alt="大学院生は雑魚寝。船上での若者トークは一味違う。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo9.jpg" alt="風呂は海水の時も。揺られながらの風呂も一味違う。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo10.jpg" alt="娯楽室。映画や漫画やWiiがあります。結構活躍する部屋です。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo11.jpg" alt="食堂。これだけ見ると、どこかのレストランですね。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo12.jpg" alt="食事は結構ボリュームがあり、豪華です。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo13.jpg" alt="何と、食堂には潜水艇が撮影している映像が中継されます。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo14.jpg" alt="自販機。真夏だったので、こいつには救われた。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo15.jpg" alt="操縦室。お馴染みのレーダーや航海図、双眼鏡があります。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo16.jpg" alt="会議室。偉大な研究者と作成会議をしことは、小さな青年にとっては感動です。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo17.jpg" alt="潜水艇の操縦室。ここでコントローラーを使って潜水艇を操作します。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo18.jpg" alt="船からの景色は最高です。風が心地よい。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo19.jpg" alt="しかし、落ちたら死ぬなとも思います。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo20.jpg" alt="雲。大気の層がこれほどはっきり見えたのは初めて。" width="100%"></a></li>
+			<li><a href="#"><img src="photo/photo21.jpg" alt="夕日と水平線。また見に行きたいな♪" width="100%"></a></li>
+		</ul>
+	</div>
+</article><!-- /.txt -->
+
+</div><!-- /.contents -->
+
+<div class="modalWrWr">
+	<div class="modalWr">
+		<div class="modal">
+			<div class="carousel">
+				<div class="prev"><a href="#">前へ</a></div>
+				<div class="figureWrWr">
+					<div class="figureWr">
+						<?php //jsでfigure要素を出力 ?>
+					</div>
+				</div>
+				<div class="next"><a href="#">次へ</a></div>
+			</div><!-- /.carousel -->
+		</div><!-- /.modal -->
+		<div class="ctrl">
+			<p class="delete">
+				<a href="#">閉じる</a>
+			</p>
+			<p class="indicator">
+				<span class="photoNum"></span>/21
+			</p>
+		</div><!-- /.ctrl -->
+	</div>
+</div><!-- /.modalWrWr -->
+
+</div><!-- /.wr -->
+</body>
+</html>
