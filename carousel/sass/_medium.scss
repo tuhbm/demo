@@ -14,25 +14,23 @@ body {
 			flex: 1;
 		}
 	}
-	&.episode3 {
-		.thumb {
-			padding: 10px 0 0 3%;
-			li {
-				width: 22%;
-			}
+	.thumb {
+		padding: 0 0 0 3%;
+		li {
+			width: 22%;
 		}
-		.modalWr {
-			.modal,
-			.ctrl {
-				width: 85%;
-				.delete {
-					a {
-						font-size: 20px;
-					}
+	}
+	.modalWr {
+		.modal,
+		.ctrl {
+			width: 85%;
+			.delete {
+				a {
+					font-size: 20px;
 				}
-				.indicator {
-					font-size: 30px;
-				}
+			}
+			.indicator {
+				font-size: 30px;
 			}
 		}
 	}

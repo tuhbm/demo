@@ -7,25 +7,23 @@ body {
 	.contents{
 		position: relative;
 	}
-	&.episode3 {
-		.thumb {
-			padding: 10px 0 0 7%;
-			li {
-				width: 29%;
-			}
+	.thumb {
+		padding: 0 0 0 7%;
+		li {
+			width: 29%;
 		}
-		.modalWr {
-			.modal,
-			.ctrl {
-				width: 95%;
-				.delete {
-					a {
-						font-size: 15px;
-					}
+	}
+	.modalWr {
+		.modal,
+		.ctrl {
+			width: 95%;
+			.delete {
+				a {
+					font-size: 15px;
 				}
-				.indicator {
-					font-size: 20px;
-				}
+			}
+			.indicator {
+				font-size: 20px;
 			}
 		}
 	}

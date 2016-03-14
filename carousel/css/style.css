@@ -41,24 +41,24 @@ a {
 
 /* #vol */
 #vol .volTitleWr {
-  margin-bottom: 10px;
+  margin: 10px 0;
   text-align: center; }
   #vol .volTitleWr .volTitle {
     font-size: 18px; }
     #vol .volTitleWr .volTitle span {
       font-weight: bold; }
 
-#vol.episode3 .thumb ul li {
+#vol .thumb ul li {
   float: left;
   margin: 0 10px 10px 0; }
-  #vol.episode3 .thumb ul li a {
+  #vol .thumb ul li a {
     display: block;
     width: 100%; }
 
-#vol.episode3 .modalWrWr {
+#vol .modalWrWr {
   display: none; }
 
-#vol.episode3 .modalWr {
+#vol .modalWr {
   position: fixed;
   top: 0;
   left: 0;
@@ -73,65 +73,65 @@ a {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center; }
-  #vol.episode3 .modalWr .modal {
+  #vol .modalWr .modal {
     max-width: 790px;
     background-color: #fff; }
-    #vol.episode3 .modalWr .modal .termWindow {
+    #vol .modalWr .modal .termWindow {
       padding: 10px; }
-      #vol.episode3 .modalWr .modal .termWindow dt {
+      #vol .modalWr .modal .termWindow dt {
         font-weight: bold;
         margin-bottom: 5px; }
-    #vol.episode3 .modalWr .modal .carousel {
+    #vol .modalWr .modal .carousel {
       display: -webkit-flex;
       display: flex;
       -webkit-align-items: center;
       align-items: center;
       -webkit-justify-content: center;
       justify-content: center; }
-      #vol.episode3 .modalWr .modal .carousel .prev, #vol.episode3 .modalWr .modal .carousel .next {
+      #vol .modalWr .modal .carousel .prev, #vol .modalWr .modal .carousel .next {
         width: 6%;
         height: 185px;
         margin: 0 2%; }
-        #vol.episode3 .modalWr .modal .carousel .prev a, #vol.episode3 .modalWr .modal .carousel .next a {
+        #vol .modalWr .modal .carousel .prev a, #vol .modalWr .modal .carousel .next a {
           display: block;
           width: 100%;
           height: 100%;
           text-indent: -9999px; }
-      #vol.episode3 .modalWr .modal .carousel .prev {
+      #vol .modalWr .modal .carousel .prev {
         background: url("../img/icon/carousel_l.png") 50% 50% no-repeat;
         -webkit-background-size: contain;
         background-size: contain; }
-      #vol.episode3 .modalWr .modal .carousel .next {
+      #vol .modalWr .modal .carousel .next {
         background: url("../img/icon/carousel_r.png") 50% 50% no-repeat;
         -webkit-background-size: contain;
         background-size: contain; }
-      #vol.episode3 .modalWr .modal .carousel .figureWrWr {
+      #vol .modalWr .modal .carousel .figureWrWr {
         width: 80%;
         max-width: 630px;
         margin: 3% 0;
         overflow: hidden; }
-        #vol.episode3 .modalWr .modal .carousel .figureWrWr .figureWr {
+        #vol .modalWr .modal .carousel .figureWrWr .figureWr {
           display: -webkit-flex;
           display: flex;
           -webkit-align-items: flex-start;
           align-items: flex-start; }
-          #vol.episode3 .modalWr .modal .carousel .figureWrWr .figureWr figure {
+          #vol .modalWr .modal .carousel .figureWrWr .figureWr figure {
             -webkit-flex: none;
             flex: none; }
-          #vol.episode3 .modalWr .modal .carousel .figureWrWr .figureWr figcaption {
+          #vol .modalWr .modal .carousel .figureWrWr .figureWr figcaption {
             margin: 2% 1% 0 1%; }
-  #vol.episode3 .modalWr .ctrl {
+  #vol .modalWr .ctrl {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     align-items: center;
     max-width: 790px;
     margin-top: 5px; }
-    #vol.episode3 .modalWr .ctrl .delete {
+    #vol .modalWr .ctrl .delete {
       -webkit-flex: 1;
       flex: 1;
       text-align: left; }
-      #vol.episode3 .modalWr .ctrl .delete a {
+      #vol .modalWr .ctrl .delete a {
         display: inline-block;
         margin-left: 2%;
         padding: 3px 0 0 35px;
@@ -139,7 +139,7 @@ a {
         -webkit-background-size: contain;
         background-size: contain;
         color: #fff; }
-    #vol.episode3 .modalWr .ctrl .indicator {
+    #vol .modalWr .ctrl .indicator {
       -webkit-flex: 1;
       flex: 1;
       text-align: right;
@@ -154,18 +154,18 @@ a {
   /* #vol */
   #vol .contents {
     position: relative; }
-  #vol.episode3 .thumb {
-    padding: 10px 0 0 7%; }
-    #vol.episode3 .thumb li {
+  #vol .thumb {
+    padding: 0 0 0 7%; }
+    #vol .thumb li {
       width: 29%; }
-  #vol.episode3 .modalWr .modal,
-  #vol.episode3 .modalWr .ctrl {
+  #vol .modalWr .modal,
+  #vol .modalWr .ctrl {
     width: 95%; }
-    #vol.episode3 .modalWr .modal .delete a,
-    #vol.episode3 .modalWr .ctrl .delete a {
+    #vol .modalWr .modal .delete a,
+    #vol .modalWr .ctrl .delete a {
       font-size: 15px; }
-    #vol.episode3 .modalWr .modal .indicator,
-    #vol.episode3 .modalWr .ctrl .indicator {
+    #vol .modalWr .modal .indicator,
+    #vol .modalWr .ctrl .indicator {
       font-size: 20px; }
   /* /#vol */ }
 
@@ -182,18 +182,18 @@ a {
     #vol .contents .txt {
       -webkit-flex: 1;
       flex: 1; }
-  #vol.episode3 .thumb {
-    padding: 10px 0 0 3%; }
-    #vol.episode3 .thumb li {
+  #vol .thumb {
+    padding: 0 0 0 3%; }
+    #vol .thumb li {
       width: 22%; }
-  #vol.episode3 .modalWr .modal,
-  #vol.episode3 .modalWr .ctrl {
+  #vol .modalWr .modal,
+  #vol .modalWr .ctrl {
     width: 85%; }
-    #vol.episode3 .modalWr .modal .delete a,
-    #vol.episode3 .modalWr .ctrl .delete a {
+    #vol .modalWr .modal .delete a,
+    #vol .modalWr .ctrl .delete a {
       font-size: 20px; }
-    #vol.episode3 .modalWr .modal .indicator,
-    #vol.episode3 .modalWr .ctrl .indicator {
+    #vol .modalWr .modal .indicator,
+    #vol .modalWr .ctrl .indicator {
       font-size: 30px; }
   /* /#vol */ }
 
@@ -213,17 +213,17 @@ a {
     #vol .contents .txt {
       -webkit-flex: 1;
       flex: 1; }
-  #vol.episode3 .thumb {
-    padding: 10px 0 0 5%; }
-    #vol.episode3 .thumb li {
+  #vol .thumb {
+    padding: 0 0 0 5%; }
+    #vol .thumb li {
       width: 22%; }
-  #vol.episode3 .modalWr .modal,
-  #vol.episode3 .modalWr .ctrl {
+  #vol .modalWr .modal,
+  #vol .modalWr .ctrl {
     width: 70%; }
-    #vol.episode3 .modalWr .modal .delete a,
-    #vol.episode3 .modalWr .ctrl .delete a {
+    #vol .modalWr .modal .delete a,
+    #vol .modalWr .ctrl .delete a {
       font-size: 20px; }
-    #vol.episode3 .modalWr .modal .indicator,
-    #vol.episode3 .modalWr .ctrl .indicator {
+    #vol .modalWr .modal .indicator,
+    #vol .modalWr .ctrl .indicator {
       font-size: 30px; }
   /* /#vol */ }
