@@ -1,0 +1,229 @@
+@charset "UTF-8";
+.wr {
+  background-color: #eee; }
+
+.cf:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+/* reset */
+html, body, h1, h2, h3, h4, h5, header, footer, nav, article, section, figure, figcaption, ul, dl, dt, dd, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+header, footer, nav, article, section, aside, figure, figcaption {
+  display: block; }
+
+body {
+  font-family: Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'モリサワ 新ゴ R', 'Droid Sans', メイリオ, 'sans-serif';
+  -webkit-text-size-adjust: none; }
+
+img {
+  border: 0; }
+
+li {
+  list-style: none; }
+
+table {
+  border-collapse: collapse; }
+
+/* /reset */
+body {
+  background-color: #363636;
+  color: #4e4e4e; }
+
+a {
+  text-decoration: none; }
+
+/* #vol */
+#vol .volTitleWr {
+  margin: 10px 0;
+  text-align: center; }
+  #vol .volTitleWr .volTitle {
+    font-size: 18px; }
+    #vol .volTitleWr .volTitle span {
+      font-weight: bold; }
+
+#vol .thumb ul li {
+  float: left;
+  margin: 0 10px 10px 0; }
+  #vol .thumb ul li a {
+    display: block;
+    width: 100%; }
+
+#vol .modalWrWr {
+  display: none; }
+
+#vol .modalWr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  #vol .modalWr .modal {
+    max-width: 790px;
+    background-color: #fff; }
+    #vol .modalWr .modal .termWindow {
+      padding: 10px; }
+      #vol .modalWr .modal .termWindow dt {
+        font-weight: bold;
+        margin-bottom: 5px; }
+    #vol .modalWr .modal .carousel {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      #vol .modalWr .modal .carousel .prev, #vol .modalWr .modal .carousel .next {
+        width: 6%;
+        height: 185px;
+        margin: 0 2%; }
+        #vol .modalWr .modal .carousel .prev a, #vol .modalWr .modal .carousel .next a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-indent: -9999px; }
+      #vol .modalWr .modal .carousel .prev {
+        background: url("../img/icon/carousel_l.png") 50% 50% no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain; }
+      #vol .modalWr .modal .carousel .next {
+        background: url("../img/icon/carousel_r.png") 50% 50% no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain; }
+      #vol .modalWr .modal .carousel .figureWrWr {
+        width: 80%;
+        max-width: 630px;
+        margin: 3% 0;
+        overflow: hidden; }
+        #vol .modalWr .modal .carousel .figureWrWr .figureWr {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: flex-start;
+          align-items: flex-start; }
+          #vol .modalWr .modal .carousel .figureWrWr .figureWr figure {
+            -webkit-flex: none;
+            flex: none; }
+          #vol .modalWr .modal .carousel .figureWrWr .figureWr figcaption {
+            margin: 2% 1% 0 1%; }
+  #vol .modalWr .ctrl {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    max-width: 790px;
+    margin-top: 5px; }
+    #vol .modalWr .ctrl .delete {
+      -webkit-flex: 1;
+      flex: 1;
+      text-align: left; }
+      #vol .modalWr .ctrl .delete a {
+        display: inline-block;
+        margin-left: 2%;
+        padding: 3px 0 0 35px;
+        background: url("../img/icon/delete.png") 0 50% no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        color: #fff; }
+    #vol .modalWr .ctrl .indicator {
+      -webkit-flex: 1;
+      flex: 1;
+      text-align: right;
+      margin-right: 2%;
+      color: #fff; }
+
+/* /#vol */
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 15px;
+    line-height: 1.4; }
+  /* #vol */
+  #vol .contents {
+    position: relative; }
+  #vol .thumb {
+    padding: 0 0 0 7%; }
+    #vol .thumb li {
+      width: 29%; }
+  #vol .modalWr .modal,
+  #vol .modalWr .ctrl {
+    width: 95%; }
+    #vol .modalWr .modal .delete a,
+    #vol .modalWr .ctrl .delete a {
+      font-size: 15px; }
+    #vol .modalWr .modal .indicator,
+    #vol .modalWr .ctrl .indicator {
+      font-size: 20px; }
+  /* /#vol */ }
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4; }
+  /* #vol */
+  #vol .contents {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; }
+    #vol .contents .txt {
+      -webkit-flex: 1;
+      flex: 1; }
+  #vol .thumb {
+    padding: 0 0 0 3%; }
+    #vol .thumb li {
+      width: 22%; }
+  #vol .modalWr .modal,
+  #vol .modalWr .ctrl {
+    width: 85%; }
+    #vol .modalWr .modal .delete a,
+    #vol .modalWr .ctrl .delete a {
+      font-size: 20px; }
+    #vol .modalWr .modal .indicator,
+    #vol .modalWr .ctrl .indicator {
+      font-size: 30px; }
+  /* /#vol */ }
+
+@media screen and (min-width: 701px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4; }
+  .wr {
+    max-width: 950px;
+    margin: 0 auto; }
+  /* #vol */
+  #vol .contents {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; }
+    #vol .contents .txt {
+      -webkit-flex: 1;
+      flex: 1; }
+  #vol .thumb {
+    padding: 0 0 0 5%; }
+    #vol .thumb li {
+      width: 22%; }
+  #vol .modalWr .modal,
+  #vol .modalWr .ctrl {
+    width: 70%; }
+    #vol .modalWr .modal .delete a,
+    #vol .modalWr .ctrl .delete a {
+      font-size: 20px; }
+    #vol .modalWr .modal .indicator,
+    #vol .modalWr .ctrl .indicator {
+      font-size: 30px; }
+  /* /#vol */ }

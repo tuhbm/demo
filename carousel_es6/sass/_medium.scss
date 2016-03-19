@@ -1,0 +1,38 @@
+body {
+	font-size: 14px;
+	line-height: 1.4;
+}
+/* #vol */
+#vol {
+	.contents {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
+		.txt {
+			-webkit-flex: 1;
+			flex: 1;
+		}
+	}
+	.thumb {
+		padding: 0 0 0 3%;
+		li {
+			width: 22%;
+		}
+	}
+	.modalWr {
+		.modal,
+		.ctrl {
+			width: 85%;
+			.delete {
+				a {
+					font-size: 20px;
+				}
+			}
+			.indicator {
+				font-size: 30px;
+			}
+		}
+	}
+}
+/* /#vol */
