@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>background-size:containとjs</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div class="wr">
+		<section>
+			<h1>jsなし（高さ150px固定 & background-size:contain）</h1>
+			<div class="backgroundImage heightFix"></div>	
+		</section>
+		<section>
+			<h1>jsあり（ウィンドウ幅に応じて、高さを可変 & background-size:contain）</h1>
+			<div class="backgroundImage heightCalculate"></div>
+		</section>
+		<section>
+			<h1>jsなし（高さ150px固定 & background-size:cover）</h1>
+			<div class="backgroundImage heightFix cover"></div>
+		</section>
+		<section>
+			<h1>jsあり（ウィンドウ幅に応じて、高さを可変 & background-size:cover）</h1>
+			<div class="backgroundImage heightCalculate cover"></div>
+		</section>
+	</div><!-- /.wr -->
+</body>
+</html>
