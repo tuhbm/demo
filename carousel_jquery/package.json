@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tnk-mitsuru/tools/issues"
+    "url": "https://github.com/tnk-mitsuru/demo/issues"
   },
-  "homepage": "https://github.com/tnk-mitsuru/tools",
+  "homepage": "https://github.com/tnk-mitsuru/demo",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4"
