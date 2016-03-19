@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* reset */
+html, body, h1, h2, h3, h4, h5, header, footer, nav, article, section, figure, figcaption, ul, dl, dt, dd, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+header, footer, nav, article, section, aside, figure, figcaption {
+  display: block; }
+
+body {
+  font-family: Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'モリサワ 新ゴ R', 'Droid Sans', メイリオ, 'sans-serif';
+  -webkit-text-size-adjust: none; }
+
+img {
+  border: 0; }
+
+li {
+  list-style: none; }
+
+table {
+  border-collapse: collapse; }
+
+/* /reset */
+h1 {
+  font-size: 120%;
+  margin: 10px; }
+
+.backgroundImage {
+  width: 100%;
+  background-color: #363636;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+.heightFix {
+  height: 150px; }
+
+.cover {
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+@media screen and (max-width: 500px) {
+  .backgroundImage {
+    background-image: url("../img/episodeImg3_s.jpg"); } }
+
+@media screen and (min-width: 501px) {
+  .backgroundImage {
+    background-image: url("../img/episodeImg3_l.jpg"); } }
+
+@media screen and (min-width: 701px) {
+  .wr {
+    max-width: 950px;
+    margin: 0 auto; } }
