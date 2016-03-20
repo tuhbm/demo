@@ -17,15 +17,11 @@ gulp.task( 'sass', function() {
     .pipe(autoprefixer())
     .pipe(gulp.dest('./css'));
 });
-// JS文法チェック
-gulp.task('jshint', function() {
-  gulp.src('./js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
-// ES6コンパイル
+// ES6コンパイル & JS文法チェック
 gulp.task('babel', function() {
   gulp.src('./es6/*.js')
+    .pipe(jshint({esversion: 6}))
+    .pipe(jshint.reporter('default'))
     .pipe(babel({
       presets: ['es2015']
     }))
@@ -62,7 +58,6 @@ gulp.task('imgmin', function () {
 gulp.task('watch', function(){
   gulp.watch('./sass/*.scss', ['sass']);
   gulp.watch('./es6/*.js', ['babel']);
-  gulp.watch('./js/*.js', ['jshint']);
 });
 
 // デフォルトタスク
